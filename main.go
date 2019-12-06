@@ -7,8 +7,8 @@ import (
 func main() {
 	bc := NewBlockchain()
 
-	bc.AddBlock("Send 1 BTC to Ivan")
-	bc.AddBlock("Send 2 more BTC to Ivan")
+	bc.AddBlock("Yamashita send 5000yen to Nishino")
+	bc.AddBlock("Nishino send 5000yen to Yamashita")
 
 	for _, block := range bc.blocks {
 		fmt.Printf("Prev. hash: %x\n", block.PrevBlockHash)
